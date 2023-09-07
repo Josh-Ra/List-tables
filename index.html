@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Document</title>
+    <link rel="icon" type="image/jpeg" href="images\Registration favicon.jpg" />
+    <style>
+      table {
+        width: 40%;
+        height: 150px;
+      }
+      label {
+        font-size: 15pt;
+      }
+      .checkboxes label {
+        display: inline-block;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+      .checkboxes input {
+        vertical-align: middle;
+      }
+      .checkboxes label span {
+        vertical-align: middle;
+      }
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table
+        cellpadding="10"
+        cellspacing="5"
+        border="4"
+        style="background-color: aqua"
+        align="center"
+      >
+        <tr align="center" style="background-color: yellow">
+          <th colspan="2" style="font-size: 30px; color: red">
+            Registration Form
+          </th>
+        </tr>
+        <tr style="background-color: aqua">
+          <th width="200"><label for="username">Enter Name</label></th>
+          <th align="left">
+            <input
+              type="text"
+              id="username"
+              placeholder="You suck"
+              minlength="5"
+              required
+            />
+          </th>
+        </tr>
+        <tr>
+          <th><label for="password">Enter Password</label></th>
+          <th align="left">
+            <input
+              type="password"
+              id="password"
+              placeholder="123456789"
+              minlength="8"
+              required
+            />
+          </th>
+        </tr>
+        <tr>
+          <th><label for="address">Enter Address</label></th>
+          <th align="left">
+            <textarea></textarea>
+          </th>
+        </tr>
+        <tr>
+          <th><label for="game">Select Game</label></th>
+          <td>
+            <input
+              type="checkbox"
+              name="service"
+              value="Hockey"
+              checked="checked"
+            />Hockey<br />
+            <input
+              type="checkbox"
+              name="service"
+              value="Hockey"
+              checked="checked"
+            />Football<br />
+            <input
+              type="checkbox"
+              name="service"
+              value="Hockey"
+              checked="checked"
+            />Badminton<br />
+            <input
+              type="checkbox"
+              name="service"
+              value="Hockey"
+              checked="checked"
+            />Cricket<br />
+            <input
+              type="checkbox"
+              name="service"
+              value="Hockey"
+              checked="checked"
+            />Volleyball<br />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="gender">Gender</label></th>
+          <th align="left">
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+          </th>
+        </tr>
+        <tr>
+          <th><label for="age">Select ur age</label></th>
+          <th align="left">
+            <select name="age" id="age">
+              <option value="None">Select</option>
+              <option value="10-15">10-15</option>
+              <option value="15-20">15-20</option>
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th><label for="photo">Select Photo</label></th>
+          <th align="left"><input type="file" /></th>
+        </tr>
+        <tr>
+          <th colspan="10">
+            <button style="width: 175px; height: 50px">Click Me</button>
+            <input type="reset" style="width: 175px; height: 50px" />
+            <input type="submit" style="width: 200px; height: 50px" />
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
